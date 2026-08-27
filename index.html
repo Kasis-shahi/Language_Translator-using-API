@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Language Translator
     </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="extra.css">
+    
 </head>
-<body>
+<body class="font-poppins flex items-center justify-center px-[10px] min-h-screen bg-[#ADD8E6]">
+  
+    <!-- //todo big container 2 things inside-->
+    <div class="container max-w-lg w-full p-2 bg-white rounded-2xl shadow-[0_10px_20px_rgba(0,0,0,0.01)]">
+
+        <!-- //todo first thing = 2 things inside -->
+      <div class="wrapper rounded-[5px] border border-[#ccc]">
+        <!-- //todo 1  -->
+        <div class="text-input">
+          <textarea spellcheck="false" class="from-text" placeholder="Enter text"></textarea>
+
+          <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+        </div>
+
+        <!-- //todo 2  -->
+        <ul class="controls">
+            <!-- //todo lists  -->
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up"></i>
+              <i id="from" class="fas fa-copy"></i>
+            </div>
+            <select></select>
+          </li>
+
+          <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+
+          <li class="row to">
+            <select></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up"></i>
+              <i id="to" class="fas fa-copy"></i>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- //todo 2nd thing of container  -->
+      <button class="bg-[#FA8072]">Translate Text</button>
+
+    </div>
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
